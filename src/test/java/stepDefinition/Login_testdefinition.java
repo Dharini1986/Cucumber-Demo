@@ -18,7 +18,7 @@ public class Login_testdefinition {
 	@Given("^User navigates to \"(.*?)\"$")
 	public void user_navigates_to(String arg1) throws Throwable 
    {
-		System.setProperty("webdriver.chrome.driver","D://chromedriver_win32//chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","chromedriver.exe");
 		driver = new ChromeDriver(); 	
 		driver.manage().timeouts().implicitlyWait(1,TimeUnit.MINUTES);
         driver.get(arg1);
